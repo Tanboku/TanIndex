@@ -2,10 +2,6 @@
 
 在线体验：[https://tanboku.github.io/TanIndex/](https://tanboku.github.io/TanIndex/)
 
-![TanIndex 定制你的最强主页](./doc/assets/docpic1.png)
-
-![TanIndex 用命令来控制网页](./doc/assets/docpic2.png)
-
 ## TanIndex 是什么？
 
 一个很特别的浏览器主页，支持使用输入命令的方式来操作，目标是帮你在一个 web 终端中高效完成所有的事情！（all in one）
@@ -13,12 +9,6 @@
 此外，它也是一个功能强大的 web 终端组件。开发者可以在它的基础上定制自己的 web 终端，并且可以在终端中集成任何内容！
 
 > 如果你是一名程序员，相信你会爱上它~
-
-你可以将音乐、游戏，甚至可以将自己的偶像封装到主页~
-
-![](./doc/assets/docpic3.png)
-
-![](./doc/assets/docpic4.png)
 
 ### 1 分钟上手使用
 
@@ -189,10 +179,6 @@ history
 - 微终端：UI 展示和终端交互逻辑
 - 命令系统：连接微终端和命令集（中介者），负责匹配、解析和执行命令，并通过终端提供的操作接口给予其反馈
 - 命令集：各种不同功能的命令定义和实现
-
-前端架构图：
-
-![](./doc/assets/docpic5.png)
 
 ### 微终端
 
