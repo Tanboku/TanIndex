@@ -1,0 +1,1 @@
+import{aZ as t,a as s,c as a,b0 as o,b1 as _,e as c}from"./index.88338c24.js";const n={},r=e=>(o("data-v-995a2a8a"),e=e(),_(),e),d={class:"ikun-test-box",style:{margin:"8px 0"}},p=r(()=>c("iframe",{src:"https://www.ikuntest.com"},null,-1)),i=[p];function u(e,l){return s(),a("div",d,i)}var f=t(n,[["render",u],["__scopeId","data-v-995a2a8a"]]);export{f as default};
