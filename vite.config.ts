@@ -9,6 +9,7 @@ import { chromeExtension } from "./build/chromeExtension";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/TanIndex/",
   plugins: [
     vue(),
     // 按需加载 ant-design-vue
