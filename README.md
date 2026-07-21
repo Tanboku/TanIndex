@@ -1,21 +1,10 @@
 # TanIndex - 极客范儿的浏览器主页
 
-> Coolest browser index for geeks! 
-> 
-> 前后端全栈项目 By [程序员淡墨](https://docs.qq.com/doc/DUFFRVWladXVjeUxW)
-
-
-
-在线体验：[http://tanindex.tanmo.icu](http://tanindex.tanmo.icu)
-
-视频演示：[https://www.bilibili.com/video/BV19B4y1Y7m8/](https://www.bilibili.com/video/BV19B4y1Y7m8/)
+在线体验：[https://tanboku.github.io/TanIndex/](https://tanboku.github.io/TanIndex/)
 
 ![TanIndex 定制你的最强主页](./doc/assets/docpic1.png)
 
 ![TanIndex 用命令来控制网页](./doc/assets/docpic2.png)
-
-⭐️ 我在自己的 [编程知识星球](https://tanmo.icu) 内花 4 个小时直播给大家详细解读了这个项目的创作思路 + 技术选型 + 系统设计 + 源码解读 + 思路扩展 + 简历亮点分享，如果你希望把这个项目写到简历上、或者深入学习，[欢迎加入我的星球观看](https://tanmo.icu/%E6%98%9F%E7%90%83%E9%A1%B9%E7%9B%AE/Web%20%E7%BB%88%E7%AB%AF%E9%A1%B9%E7%9B%AE.html) 。
-
 
 ## TanIndex 是什么？
 
@@ -25,44 +14,37 @@
 
 > 如果你是一名程序员，相信你会爱上它~
 
-
-
 你可以将音乐、游戏，甚至可以将自己的偶像封装到主页~
 
 ![](./doc/assets/docpic3.png)
 
 ![](./doc/assets/docpic4.png)
 
-
-
 ### 1 分钟上手使用
 
-请打开网站：https://tanindex.com
+请打开网站：[https://tanboku.github.io/TanIndex/](https://tanboku.github.io/TanIndex/)
 
 然后在网站内依次输入以下命令：
 
 ```bash
-baidu 程序员淡墨
+baidu tanindex
 github tanindex
-goto tanmo.icu
+goto github.com
 todo
-music 坤坤
+music
 moyu
 按键 Ctrl + O 触发折叠, 再按可展开
 history
 按键 Ctrl + L 清屏
 ```
 
-使用  `help 命令英文名` 可以查询某命令的具体用法，如：`help search` 。
+使用 `help 命令英文名` 可以查询某命令的具体用法，如：`help search`。
 
 使用 `shortcut` 可以查看所有的快捷键。
 
 > 完整命令用法请见：[命令手册](./doc/commands.md)
 
 尽情探索吧~
-
-
-
 
 ## 项目优势
 
@@ -74,22 +56,16 @@ history
 - 支持定制背景等，打造你的个性主页
 - 帮助你熟悉 Linux 命令，感受到编程的乐趣
 
-
-
 ### 开发者
 
 - 可以独立使用功能丰富的 web 终端组件，或二次开发
 - 可以开发自己的命令并接入系统
-
-
 
 ### 学习者
 
 - 可以学到 web 终端的开发方式
 - 可以学到系统设计知识，理解抽象和复用
 - 可以学到较为规范的代码目录和格式
-
-
 
 ## 功能和特性
 
@@ -106,8 +82,6 @@ history
 - 帮助手册自动生成
 - 自定义配置（比如更换背景、提示开关等）
 - 支持子命令
-
-
 
 ### 已支持命令
 
@@ -126,8 +100,6 @@ history
 - 摸鱼小游戏 moyu
 - 坤坤 ikun
 - 其他。。。
-
-
 
 ## 技术栈
 
@@ -152,9 +124,6 @@ history
 
 库：getopts
 
-
-
-
 ### 后端
 
 主要技术：
@@ -176,8 +145,6 @@ history
 - 新浪壁纸 API
 
 [点击了解后端详情](server/README.md)
-
-
 
 ## 目录结构
 
@@ -208,16 +175,12 @@ history
 - tsconfig.json TS 配置
 - vite.config.ts 打包工具配置
 
-
-
 ## 系统设计
 
 ### 设计理念
 
 1. 开放：采用类插件化设计，便于开发者自定义新命令，且能够通过配置自动生成帮助提示
 2. 重前端轻后端：考虑到扩展性、安全性以及实现的方便，除了核心模块外，尽量不请求后端
-
-
 
 ### 核心
 
@@ -227,13 +190,9 @@ history
 - 命令系统：连接微终端和命令集（中介者），负责匹配、解析和执行命令，并通过终端提供的操作接口给予其反馈
 - 命令集：各种不同功能的命令定义和实现
 
-
-
 前端架构图：
 
 ![](./doc/assets/docpic5.png)
-
-
 
 ### 微终端
 
@@ -249,9 +208,6 @@ history
 - 命令历史：记录用户输入的命令结果，使用 Vue 3 Composition API 封装部分逻辑
 - 命令提示：根据用户的输入给出提示，使用 Vue 3 Composition API 独立封装
 
-
-
-
 ### 命令系统
 
 一套独立于终端的命令解析执行引擎，包含以下模块：
@@ -261,8 +217,6 @@ history
 - 解析器：从输入文本中解析出参数和选项
 - 执行器：执行命令，完成操作
 - 子命令机制：支持递归解析子命令
-
-
 
 ### 命令集
 
@@ -276,27 +230,15 @@ history
 - 搜索：可以快速从不同搜索引擎检索内容
 - 其他模块。。。
 
-
-
 ### 为什么要自己写终端？
 
 1. 本来打算使用现成的 xterm.js，但实际使用中发现它的文档比较少、问题难解决（比如中文字符），解决问题消耗的时间足够自己写一套新的 web 终端了。而且它更适用于和后端服务器强交互的场景，与本项目的定位不符。
 2. 开源的 web 终端很少，给开源贡献一份力。
 3. 帮助自己复习 Vue，突破个人系统开发设计能力的边界。
 
-
-
-### 更多讲解
-
-如果你希望获取该项目的完整详细讲解，欢迎加入 [淡墨的编程知识星球](https://tanmo.icu/) ，这是淡墨的编程学习圈子，我会在圈子内带大家从 0 到 1 分析解读这个项目，让你也能独立做一个，项目经历 + 1。
-
-
-
 ## 贡献指南
 
 欢迎各位朋友贡献代码，还请先阅读以下指南。
-
-
 
 ### 开发新命令
 
@@ -304,11 +246,8 @@ history
 2. 编写命令定义文件 xxxCommand.ts（xxx 为命令英文名称），可以参考其他命令，如 music、goto 等
 3. 若命令包含子命令，需要将子命令相关文件放到 subCommands 目录中，可以参考 user 命令
 4. 在 commandRegister 的 commandList 中补充新命令
-5. 测试验证通过后，可以发起 PR 等淡墨合并
-
-
+5. 测试验证通过后，可以发起 PR 等待合并
 
 ## 致谢
 
 摸鱼命令的实现依赖于 https://haiyong.site/moyu ，感谢大佬的开源分享。
-

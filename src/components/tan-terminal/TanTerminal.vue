@@ -330,8 +330,7 @@ onMounted(() => {
         `<a href="//github.com/liyupi/yuindex" target='_blank'> GitHub Open Source</a>`
     );
     terminal.writeTextOutput(
-      `Author <a href="//docs.qq.com/doc/DUFFRVWladXVjeUxW" target="_blank">coder_tanmo</a>` +
-        `: please input 'help' to enjoy`
+      `Author: please input 'help' to enjoy`
     );
     terminal.writeTextOutput("<br/>");
   }
